@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the history of the Rick Roll meme and its impact on internet culture. Click to experience the ultimate internet prank.">
+  <title>The Legendary Rick Roll: A Meme History</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: relative;
+      overflow: hidden;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .rickface {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-image: url('https://i.imgur.com/dQw4w9W.jpg');
+      background-size: cover;
+      animation: spin 5s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .meme-gif {
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      display: block;
+    }
+    .fun-fact {
+      background-color: #ffd700;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .rickroll-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .rickroll-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Legendary Rick Roll</h1>
+    <div class="rickface"></div>
+  </header>
+  
+  <div class="container">
+    <div class="content">
+      <h2>What is a Rick Roll?</h2>
+      <p>A Rick Roll is an internet prank that involves unexpectedly presenting a video or audio clip of Rick Astley's 1987 hit song "Never Gonna Give You Up". It's a classic bait-and-switch tactic that has become one of the most enduring memes in internet history.</p>
+      
+      <img class="meme-gif" src="https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif" alt="Rick Astley dancing, animated GIF">
+      
+      <h2>The Birth of a Meme</h2>
+      <p>The Rick Roll phenomenon began in May 2007 on 4chan's video game board. It started as a bait-and-switch trick where users were promised a trailer for the game "Grand Theft Auto IV" but were instead directed to the music video for "Never Gonna Give You Up".</p>
+      
+      <div class="fun-fact">
+        <h3>Fun Fact!</h3>
+        <p>Rick Astley himself has been Rick Rolled! He admitted in an interview that he fell for the prank when someone sent him a link claiming to be a video of him from his early career.</p>
+      </div>
+      
+      <h2>Rick Rolling Goes Mainstream</h2>
+      <p>The meme quickly spread beyond 4chan, becoming a global internet sensation. It has since been featured in numerous contexts, from April Fools' Day jokes by major companies to unexpected appearances in serious news broadcasts.</p>
+      
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="rickroll-button" target="_blank" rel="noopener noreferrer">Click for a Surprise!</a>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.rickroll-button').addEventListener('click', function(e) {
+      e.preventDefault();
+      alert("You've been Rick Rolled! 🎵 Never gonna give you up, never gonna let you down... 🎵");
+      window.open(this.href, '_blank');
+    });
+  </script>
+</body>
+</html>
